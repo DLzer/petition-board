@@ -14,7 +14,9 @@ class PetitionController extends Controller
     public function index()
     {
 
-        $petitions = Petition::all();
+        $petitions = Petition::where('petition_title', '!=', NULL)
+                                ->orderby('petition_votes', 'desc')
+                                ->get();
         return View::make('pages.home', ['petition' => $petitions]);
 
     }
