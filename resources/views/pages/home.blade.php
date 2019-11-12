@@ -19,7 +19,6 @@
                 <div class="col col-md-1">
                     <i class="fas fa-chevron-up upvote" data-petition_id="{{$single['petition_id']}}" style="width:100%;display:block;text-align:center; cursor: pointer; font-size:22px;"></i>
                     <p class="vote_number" id="petition_vote_{{$single['petition_id']}}" style="margin-bottom:0;text-align:center; font-size:22px;"><strong>{{ $single['petition_votes'] }}</strong></p>
-                    {{--  <i class="fas fa-chevron-down downvote" data-petition_id="{{$single['petition_id']}}" style="width:100%;display:block;text-align:center;cursor: pointer;"></i>  --}}
                 </div>
                 <div class="col-10 col-md-11 single_petition_container">
                     <a href="/single/{{ $single['petition_id']}}"><h5 class="petition_title"><strong>{{ $single['petition_title'] }}</strong></h5></a>

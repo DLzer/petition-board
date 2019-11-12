@@ -4,7 +4,6 @@
         <div class="col col-md-1">
             <i class="fas fa-chevron-up upvote" data-petition_id="{{$petition['petition_id']}}" style="width:100%;display:block;text-align:center; cursor: pointer;font-size:22px;"></i>
             <p class="vote_number" id="petition_vote_{{$petition['petition_id']}}" style="margin-bottom:0;text-align:center;font-size:22px;">{{ $petition['petition_votes'] }}</p>
-            {{--  <i class="fas fa-chevron-down downvote" data-petition_id="{{$petition['petition_id']}}" style="width:100%;display:block;text-align:center; cursor: pointer;"></i>  --}}
         </div>
         <div class="col-10 col-md-11 single_petition_container" style="padding-bottom:20px;">
             <h3 class="petition_title"><strong>{{ $petition['petition_title'] }}</strong><span style="padding-left:10px; font-size:14px;">{{ date('M d Y', strtotime($petition['created_at'])) }}</span> <i class="fal fa-trash-alt delete" style="color:red; cursor: pointer;" data-petition_id="{{$petition['petition_id']}}"></i></h3>
