@@ -33,3 +33,7 @@ Route::post('/submit_comment', 'PetitionController@submit_comment');
 Route::post('/store_petition', 'PetitionController@store')->name('store');
 Route::post('/petition_vote', 'PetitionController@vote')->name('vote');
 Route::post('/delete', 'PetitionController@delete')->name('delete');
+
+Route::post('/deployment',function() {
+    require_once dirname($_SERVER['DOCUMENT_ROOT'],1).'/deployment/gitautodeploy.php';
+});
